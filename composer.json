@@ -1,0 +1,24 @@
+{
+    "name": "enrise/maparea",
+    "description": "A data mapping library.",
+    "authors": [
+        {
+            "name": "Dennis Snijder",
+            "email": "dennis@enrise.com"
+        },
+        {
+            "name": "Robert-Jan Keizer",
+            "email": "robert-jan@enrise.com"
+        },
+        {
+            "name": "William Rijksen",
+            "email": "william@enrise.com"
+        }
+    ],
+    "require": {
+        "mtdowling/jmespath.php": "^2.4"
+    },
+    "psr-0": {
+        "Enrise\\Maparea": "src/Enrise/Maparea"
+    }
+}
