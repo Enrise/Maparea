@@ -1,0 +1,9 @@
+# simple config file
+id:
+  from: uuid
+
+name:
+  from: customer_name
+
+admin:
+  from: roles.admin
