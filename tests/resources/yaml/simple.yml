@@ -4,3 +4,6 @@ id:
 
 name:
   from: customer_name
+
+admin:
+  from: roles.admin

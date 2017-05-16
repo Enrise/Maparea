@@ -46,7 +46,10 @@ class YamlLoaderTest extends TestCase
     {
         return [
             "uuid" => 1,
-            "customer_name" => "John doe"
+            "customer_name" => "John doe",
+            "roles" => [
+                "admin" => true
+            ]
         ];
     }
 
@@ -57,7 +60,8 @@ class YamlLoaderTest extends TestCase
     {
         return [
             "id" => 1,
-            "name" => "John doe"
+            "name" => "John doe",
+            "admin" => true
         ];
     }
 }
