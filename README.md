@@ -1,5 +1,4 @@
-# Maparea
-![Travis build](https://api.travis-ci.org/Enrise/Maparea.svg?branch=master)
+# Maparea ![Travis build](https://api.travis-ci.org/Enrise/Maparea.svg?branch=master)
 
 This is a PHP mapping helper utility. It's useful when you want to convert a certain array-structure into another structure. The definitions could be declared in an yaml-structure, so it's easy to verify the input and of the mapping.
 
@@ -12,7 +11,6 @@ id:
   from: uuid
 distance:
   from: plan.distance
-  service: distance_converter_service
 ```
 
 ```php
@@ -32,7 +30,7 @@ $mappedData = $mapper->mapDataWithLoader($raw, "route.yaml");
 // $mappedData
 [
     'id' => 'F2001E99-98E6-4C50-A965-C694EC44B810',
-    'distance' => 1.223
+    'distance' => 1223
 ]
 ```
 
