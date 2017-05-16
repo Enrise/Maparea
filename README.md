@@ -1,6 +1,6 @@
 # Maparea ![Travis build](https://api.travis-ci.org/Enrise/Maparea.svg?branch=master)
 
-This is a PHP mapping helper utility. It's useful when you want to convert a certain array-structure into another structure. The definitions could be declared in an yaml-structure, so it's easy to verify the input and of the mapping.
+This is a PHP mapping helper utility. It's useful when you want to convert a certain array-structure into another structure. The definitions could be declared in a yaml-structure, so it's easy to verify the input and of the mapping.
 
 ## Definition
 The definition is easiest done by using yaml. This project is using [JMESpath](http://github.com/mtdowling/jmespath.php), so you can define the mapping like this:
