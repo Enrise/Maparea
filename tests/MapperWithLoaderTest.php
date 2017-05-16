@@ -22,7 +22,7 @@ class YamlLoaderTest extends TestCase
 
     protected function setUp()
     {
-        $this->loader = new YamlLoader(__DIR__ . "/resources/yaml");
+        $this->loader = new YamlLoader(__DIR__."/resources/yaml");
         $this->mapper = Mapper::withLoader($this->loader);
     }
 
@@ -60,5 +60,4 @@ class YamlLoaderTest extends TestCase
             "name" => "John doe"
         ];
     }
-
 }

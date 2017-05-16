@@ -44,7 +44,7 @@ class YamlLoader implements LoaderInterface
         }
 
         $configFile = Yaml::parse(
-            file_get_contents($this->basePath . '/' . $configName)
+            file_get_contents($this->basePath.'/'.$configName)
         );
 
         $this->loadedConfigs[$configName] = $configFile;

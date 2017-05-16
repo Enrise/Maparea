@@ -7,7 +7,6 @@ php:
 before_script:
  - composer self-update
  - composer install
- - composer suggests | xargs -i composer require {}
 
 script:
  - vendor/bin/php-cs-fixer fix --verbose --diff --dry-run --config=.php_cs.php

@@ -3,7 +3,6 @@
 use Enrise\Maparea\Mapper;
 use PHPUnit\Framework\TestCase;
 
-
 class SimpleMapperTest extends TestCase
 {
     /**
@@ -66,5 +65,4 @@ class SimpleMapperTest extends TestCase
             "name" => "John doe"
         ];
     }
-
 }
