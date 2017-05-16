@@ -24,6 +24,9 @@
         "php": "^7.0",
         "mtdowling/jmespath.php": "^2.4"
     },
+    "suggest": {
+        "symfony/yaml": "Allows you to use the built in YamlLoader"
+    },
     "require-dev": {
         "phpunit/phpunit": "^6.1"
     }

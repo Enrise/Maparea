@@ -7,7 +7,7 @@ php:
 before_script:
  - composer self-update
  - composer install
+ - composer suggests | xargs -i composer require {}
 
 script:
  - php ./vendor/bin/phpunit -c phpunit.xml.dist
- 

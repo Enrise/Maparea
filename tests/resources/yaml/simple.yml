@@ -1,0 +1,6 @@
+# simple config file
+id:
+  from: uuid
+
+name:
+  from: customer_name

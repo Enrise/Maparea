@@ -4,7 +4,7 @@ use Enrise\Maparea\Mapper;
 use PHPUnit\Framework\TestCase;
 
 
-class MapperTest extends TestCase
+class SimpleMapperTest extends TestCase
 {
     /**
      * @var Mapper
