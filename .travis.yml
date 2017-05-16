@@ -10,4 +10,12 @@ before_script:
  - composer suggests | xargs -i composer require {}
 
 script:
+ - vendor/bin/php-cs-fixer fix --verbose --diff --dry-run --config=.php_cs.php
  - php ./vendor/bin/phpunit -c phpunit.xml.dist
+
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache/files
+    - $HOME/.php-cs-fixer
+
