@@ -21,6 +21,7 @@
         }
     },
     "require": {
+        "php": "^7.0",
         "mtdowling/jmespath.php": "^2.4"
     },
     "require-dev": {
