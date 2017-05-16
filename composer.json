@@ -15,10 +15,15 @@
             "email": "william@enrise.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Enrise\\Maparea\\": "src/Enrise/Maparea"
+        }
+    },
     "require": {
         "mtdowling/jmespath.php": "^2.4"
     },
-    "psr-0": {
-        "Enrise\\Maparea": "src/Enrise/Maparea"
+    "require-dev": {
+        "phpunit/phpunit": "^6.1"
     }
 }
