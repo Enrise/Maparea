@@ -25,6 +25,7 @@
         "mtdowling/jmespath.php": "^2.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.1"
+        "phpunit/phpunit": "^6.1",
+        "fabpot/php-cs-fixer": "^2.3"
     }
 }
