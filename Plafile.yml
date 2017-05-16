@@ -1,0 +1,8 @@
+fix:
+  - ./vendor/bin/php-cs-fixer fix --verbose --diff --config=.php_cs.php
+
+test:
+  - ./vendor/bin/phpunit -c phpunit.xml.dist
+
+check:
+  - vendor/bin/php-cs-fixer fix --verbose --diff --dry-run --config=.php_cs.php

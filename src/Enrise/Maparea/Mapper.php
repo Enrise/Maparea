@@ -36,7 +36,7 @@ class Mapper
                 /** @var MapperServiceInterface $service */
                 $service = $value["service"];
 
-                if(!$service instanceof MapperServiceInterface) {
+                if (!$service instanceof MapperServiceInterface) {
                     throw new \RuntimeException("Service should be an instance of MapperServiceInterface.");
                 }
 
@@ -48,5 +48,4 @@ class Mapper
 
         return $mappedData;
     }
-
 }
