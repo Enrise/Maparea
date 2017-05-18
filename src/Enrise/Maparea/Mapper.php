@@ -80,7 +80,7 @@ class Mapper
                 $class = $value["service_class"];
                 $value["service"] = $value["service_class"];
 
-                /** @var AbstractConverterService $service */
+                /** @var MapperServiceInterface $service */
                 $service = new $class();
                 if (!$service instanceof MapperServiceInterface) {
                     throw new \RuntimeException("Service should be instance of MapperServiceInterface");
