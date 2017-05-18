@@ -20,6 +20,11 @@
             "Enrise\\Maparea\\": "src/Enrise/Maparea"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
+        }
+    },
     "require": {
         "php": "^7.0",
         "mtdowling/jmespath.php": "^2.4"

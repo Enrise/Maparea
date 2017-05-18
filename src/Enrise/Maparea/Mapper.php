@@ -14,10 +14,6 @@ use JmesPath\Env as JmesPath;
  */
 class Mapper
 {
-    /**
-     * @var MapperServiceInterface[]
-     */
-    private $services = [];
 
     /**
      * @var LoaderInterface
@@ -80,9 +76,16 @@ class Mapper
             //filters the value from the data based on the current config.
             $filteredValue = JmesPath::search($value["from"], $data);
 
-            //checks if we have a service to call.
-            if (isset($value["service"])) {
-                $service = $this->getService($value["service"]);
+            if (isset($value["service_class"])) {
+                $class = $value["service_class"];
+                $value["service"] = $value["service_class"];
+
+                /** @var AbstractConverterService $service */
+                $service = new $class();
+                if (!$service instanceof MapperServiceInterface) {
+                    throw new \RuntimeException("Service should be instance of MapperServiceInterface");
+                }
+
                 $mappedData[$key] = $service->map($filteredValue);
             } else {
                 $mappedData[$key] = is_null($filteredValue) ? '' : $filteredValue;
@@ -90,44 +93,6 @@ class Mapper
         }
 
         return $mappedData;
-    }
-
-
-    /**
-     * Adds a service to be used in the data mapping.
-     *
-     * @param string $slug
-     * @param MapperServiceInterface $mapperService
-     */
-    public function addService(string $slug, MapperServiceInterface $mapperService)
-    {
-        $this->services[$slug] = $mapperService;
-    }
-
-    /**
-     * Gets a registered MapperService.
-     *
-     * @param $slug
-     *
-     * @return MapperServiceInterface
-     *
-     * @throws MapperServiceNotFoundException
-     */
-    public function getService($slug): MapperServiceInterface
-    {
-        if (!isset($this->services[$slug])) {
-            throw new MapperServiceNotFoundException($slug);
-        }
-
-        return $this->services[$slug];
-    }
-
-    /**
-     * @param MapperServiceInterface[] $services
-     */
-    public function setServices(array $services)
-    {
-        $this->services = $services;
     }
 
     /**

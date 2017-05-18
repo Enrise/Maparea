@@ -7,3 +7,7 @@ name:
 
 admin:
   from: roles.admin
+
+distance:
+  from: distance
+  service_class: tests\Helper\TestMapperService

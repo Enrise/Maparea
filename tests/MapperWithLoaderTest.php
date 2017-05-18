@@ -1,5 +1,7 @@
 <?php
 
+namespace tests;
+
 use Enrise\Maparea\Loader\LoaderInterface;
 use Enrise\Maparea\Loader\YamlLoader;
 use Enrise\Maparea\Mapper;
@@ -49,7 +51,8 @@ class YamlLoaderTest extends TestCase
             "customer_name" => "John doe",
             "roles" => [
                 "admin" => true
-            ]
+            ],
+            "distance" => 1223
         ];
     }
 
@@ -61,7 +64,8 @@ class YamlLoaderTest extends TestCase
         return [
             "id" => 1,
             "name" => "John doe",
-            "admin" => true
+            "admin" => true,
+            "distance" => 1.223
         ];
     }
 }
