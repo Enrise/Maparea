@@ -1,6 +1,6 @@
 <?php
 
-namespace tests\Helper;
+namespace Enrise\Maparea\tests\Helper;
 
 use Enrise\Maparea\Service\MapperServiceInterface;
 

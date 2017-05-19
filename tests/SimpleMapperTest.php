@@ -1,6 +1,6 @@
 <?php
 
-namespace tests;
+namespace Enrise\Maparea\tests;
 
 use Enrise\Maparea\Mapper;
 use PHPUnit\Framework\TestCase;

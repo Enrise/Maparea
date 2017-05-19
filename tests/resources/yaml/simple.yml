@@ -10,4 +10,4 @@ admin:
 
 distance:
   from: distance
-  service_class: tests\Helper\TestMapperService
+  service: test.service

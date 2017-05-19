@@ -1,10 +1,11 @@
 <?php
 
-namespace tests;
+namespace Enrise\Maparea\tests;
 
 use Enrise\Maparea\Loader\LoaderInterface;
 use Enrise\Maparea\Loader\YamlLoader;
 use Enrise\Maparea\Mapper;
+use Enrise\Maparea\tests\Helper\TestMapperService;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -26,6 +27,8 @@ class YamlLoaderTest extends TestCase
     {
         $this->loader = new YamlLoader(__DIR__."/resources/yaml");
         $this->mapper = Mapper::withLoader($this->loader);
+
+        $this->mapper->addService('test.service', new TestMapperService());
     }
 
     /**
