@@ -80,7 +80,6 @@ class Mapper
             //filters the value from the data based on the current config.
             $filteredValue = JmesPath::search($value["from"], $data);
 
-            //checks if we have a service to call.
             if (isset($value["service"])) {
                 $service = $this->getService($value["service"]);
                 $mappedData[$key] = $service->map($filteredValue);

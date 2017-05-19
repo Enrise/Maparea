@@ -11,6 +11,7 @@ id:
   from: uuid
 distance:
   from: plan.distance
+  service_class: \Enrise\DistanceMapper
 ```
 
 ```php
@@ -30,7 +31,7 @@ $mappedData = $mapper->mapDataWithLoader($raw, "route.yaml");
 // $mappedData
 [
     'id' => 'F2001E99-98E6-4C50-A965-C694EC44B810',
-    'distance' => 1223
+    'distance' => 1.223
 ]
 ```
 
