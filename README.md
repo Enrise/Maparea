@@ -1,3 +1,9 @@
+# Archived and unmaintained
+
+This is an old repository that is no longer used or maintained. We advice to no longer use this repository.
+
+## Original README can be found below:
+
 # Maparea ![Travis build](https://api.travis-ci.org/Enrise/Maparea.svg?branch=master)
 
 This is a PHP mapping helper utility. It's useful when you want to convert a certain array-structure into another structure. The definitions could be declared in a yaml-structure, so it's easy to verify the input and of the mapping.
